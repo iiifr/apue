@@ -27,7 +27,6 @@ path_alloc(size_t *sizep) /* also return allocated size, if nonnull */
     if (xsi_version == 0)
         xsi_version = sysconf(_SC_XOPEN_VERSION);
     if (pathmax == 0) { /* first time through */
-        Section 2.5 Limits 51
         errno = 0;
         if ((pathmax = pathconf("/", _PC_PATH_MAX)) < 0) {
             if (errno == 0)
