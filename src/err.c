@@ -27,7 +27,6 @@ err_sys(const char *fmt, ...)
     va_list ap;
     va_start(ap, fmt);
     err_doit(1, errno, fmt, ap);
-    900 Miscellaneous Source Code Appendix B
     va_end(ap);
     exit(1);
 }

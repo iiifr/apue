@@ -48,7 +48,6 @@ log_sys(const char *fmt, ...)
     va_list ap;
     va_start(ap, fmt);
     log_doit(1, errno, LOG_ERR, fmt, ap);
-    Section B.2 Standard Error Routines 903
     va_end(ap);
     exit(2);
 }
